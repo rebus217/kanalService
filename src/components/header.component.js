@@ -3,7 +3,7 @@ import react from "react";
 import { SafeAreaView, View, StyleSheet, Dimensions } from "react-native";
 import LogoIcon from "../icons/logoIcon.svg"
 import LogoIconMini from "../icons/logoIconMini.svg"
-import { isTabled } from "./common/helper";
+import { deviceWidth, headerHeight, isTabled } from "./common/helper";
 
 export default function Header() {
     return (
@@ -21,7 +21,8 @@ export default function Header() {
 
 const styles = StyleSheet.create({
     container: {
-        height: 118,
+        height: headerHeight,
+        width: deviceWidth,
         backgroundColor: "#E4B062",
         alignItems: "flex-start",
         justifyContent: "center",

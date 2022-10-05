@@ -1,8 +1,9 @@
 import { Dimensions } from "react-native";
 
+export const deviceWidth = Dimensions.get('window').width;
+export const deviceHeight = Dimensions.get('window').height;
+export const headerHeight = 118;
 
 export function isTabled() {
-    let deviceWidth = Dimensions.get('window').width
-
-    return deviceWidth >= 768
+    return deviceWidth >= 600;
 }

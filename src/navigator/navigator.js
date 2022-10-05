@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from 'react-redux';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import LoginScreen from "../screens/login.screen";
+import LoginScreen from "../screens/login.screen/login.screen";
 import ProtectedNavigator from "./protectedNavigator";
 
 export default function Navigator() {
@@ -15,6 +15,7 @@ export default function Navigator() {
             setisSignedIn(true)
         } else setisSignedIn(false)
     }, [user]);
+
 
     return (
         <Stack.Navigator
